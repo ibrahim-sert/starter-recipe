@@ -1,11 +1,12 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import Cards from "../../components/cards/Cards"
 import Header from "../../components/header/Header"
-import HomeStyle from "./Home.style"
+import HomeStyle, { HeaderText, HomeImg, ImgDiv } from "./Home.style"
+import homeSvg from "../../assets/home.svg"
 
 const Home = () => {
-  const mealType=["All","Breakfast","Lunch","Dinner","Snack","Teatime"]
+  const mealType=["Breakfast","Lunch","Dinner","Snack","Teatime"]
 
   const [query, setQuery] = useState("")
   const [recipes, setRecipes] = useState(null)
@@ -32,11 +33,6 @@ const Home = () => {
     alert("Please enter your meal")
   }
     }
-    
-  useEffect(() => {
-   getData()
-  }, [])
-  
 
   return (
     <div>
