@@ -1,5 +1,5 @@
 import React from 'react'
-import {DetailCtn, DetailPart, HeaderContainer, ImgContainer, IngContainer, OtherPart} from "./Detail.style"
+import {DetailCtn, DetailPart, HeaderContainer, ImgContainer, IngContainer, OtherPart} from "./Detail.Style"
 import { useLocation } from 'react-router-dom'
 import dietSvg from "../../assets/diet.svg"
 import defaultImage from "../../assets/default-image.jpg"

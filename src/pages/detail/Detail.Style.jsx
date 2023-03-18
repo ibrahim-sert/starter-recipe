@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Flex from '../../components/globalStyles/Flex';
+import Flex from '../../components/globalstyles/Flex';
 
 export const DetailCtn = styled(Flex)`
   flex-direction: column;
