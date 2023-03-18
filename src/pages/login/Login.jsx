@@ -9,16 +9,22 @@ import LoginStyle, {
 } from "./Login.style";
 import mealSvg from "../../assets/meal.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const navigate=useNavigate()
+
   const [userInfo, setUserInfo] = useState({
     username: "",
-    password: "",
+    password: ""
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     sessionStorage.setItem("user", JSON.stringify(userInfo));
+    navigate(-1)
+
   };
 
   return (
