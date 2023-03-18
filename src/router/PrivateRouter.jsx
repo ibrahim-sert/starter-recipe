@@ -1,8 +1,11 @@
 import React from 'react'
 
 const PrivateRouter = () => {
+    const user =JSON.par
   return (
-    <div>PrivateRouter</div>
+    <div>
+        
+    </div>
   )
 }
 
