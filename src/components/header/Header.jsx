@@ -1,9 +1,37 @@
-import HeaderStyle from "./Header.style"
+import HeaderStyle, {
+  Button,
+  FoodInput,
+  FormContainer,
+  HeaderContainer,
+  MainHeader,
+  Select,
+} from "./Header.style";
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
+
+
+const handleSubmit=(e)=>{
+  e.preventDefault()
+
 }
 
-export default Header
+
+
+
+
+  return (
+    <HeaderContainer>
+      <MainHeader>Recipe App</MainHeader>
+      <FormContainer onSubmit={handleSubmit}>
+      <FoodInput type="text" placeholder="search" />
+      <Button>SEARCH</Button>
+      <Select>
+        <option></option>
+
+      </Select>
+      </FormContainer>
+    </HeaderContainer>
+  );
+};
+
+export default Header;

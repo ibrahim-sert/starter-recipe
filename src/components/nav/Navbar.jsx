@@ -15,7 +15,7 @@ const [isOpen, setIsOpen] = useState(false)
       <Hamburger onClick={()=> setIsOpen(!isOpen)}>
         <GiHamburgerMenu/>
       </Hamburger>
-      <List>
+      <List isOpen={isOpen} >
         <Navli to="/">Home</Navli>
         <Navli to="/about">About</Navli>
         <Navli to="/register">Register</Navli>
